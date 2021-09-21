@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'package:widget_life_cycle/View/Home/home_page.dart';
 import 'package:widget_life_cycle/View/OnBoarding/login_page.dart';
 
@@ -40,8 +40,8 @@ class MyApp extends StatelessWidget {
       // For Light Mode
       theme: ThemeData(
           primarySwatch: Colors.deepPurple, // Auto manage whole theme according to given color
-          fontFamily: GoogleFonts.lato().fontFamily,
-          primaryTextTheme: GoogleFonts.latoTextTheme(),
+          // fontFamily: GoogleFonts.lato().fontFamily,
+          // primaryTextTheme: GoogleFonts.latoTextTheme(),
       ),
 
       // For Dark Mode
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
           brightness: Brightness.dark, // For brightness
           primarySwatch: Colors.green, // Auto manage whole theme according to given color
-          primaryTextTheme: GoogleFonts.latoTextTheme()
+          // primaryTextTheme: GoogleFonts.latoTextTheme()
       ),
 
       /// Route's

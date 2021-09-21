@@ -8,12 +8,13 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
         color: Colors.white,
-        child: Column(
-          children: [
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
             Image.asset(
-              "assets/images/login_image.png",
-              fit: BoxFit.cover,
-            ),
+            "assets/images/login_image.png",
+            fit: BoxFit.cover,
+          ),
             SizedBox(
               height: 20.0,
             ),
@@ -50,13 +51,15 @@ class LoginPage extends StatelessWidget {
                   ElevatedButton(onPressed: (){
 
                   },
-                      child: Text("Login"),
+                    child: Text("Login"),
                     style: TextButton.styleFrom(),
                   ),
                 ],
               ),
             )
-          ],
-        ));
+            ]
+          )
+        )
+    );
   }
 }
